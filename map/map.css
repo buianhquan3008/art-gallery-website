@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+};
+
+body {
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+body a {
+  text-decoration: none;
+}
+
+.content-top__button {
+  width: 260px;
+  height: 72px;
+  background: #151515;
+  display: flex;
+  position: absolute;
+}
+
+.content-top__button:hover {
+  background: #D5966C;
+}
+.content-top__button:hover .content-top__button__simple {
+  background: #151515;
+}
+
+
+.content-top__button__text {
+  width: 204px;
+  height: 100%;
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;  
+  line-height: 24px;
+  letter-spacing: 3.63636px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-top__button__simple {
+  width: 56px;
+  height: 100%;
+  background: #D5966C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.top-image {
+  height: 550px;
+  width: 100%;
+  background: url('../images/map.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content {
+  height: 493px;
+  width: 100%;
+  background: #151515;
+  padding: 56px 16px;
+}
+
+.main-content__title {
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.main-content__tiny-title {
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #D5966C;
+  margin-top: 48px;
+}
+
+.main-content__tiny-desc {
+  margin: 20px auto;
+}
+
+.main-content__tiny-desc,
+.main-content__desc {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+ }
+
+ .footer {
+  width: 100%;
+  height: 336px;
+  background: #D5966C;
+  padding: 48px 32px;
+}
+
+.footer__title {
+  width: 110.5px;
+  height: 40px;
+  background: url('../images/MODERNARTGALLERY-map.png');
+  background-repeat: no-repeat;
+}
+
+.footer__desc {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin: 38px auto;
+}
+
+.footer__icon {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__icon__fb {
+  width: 20px;
+  height: 20px;
+  background: url('../images/fb-map.png');
+  background-repeat: no-repeat;
+}
+
+.footer__icon__insta {
+  width: 20px;
+  height: 20px;
+  background: url('../images/insta-map.png');
+  background-repeat: no-repeat;
+}
+
+.footer__icon__twiter {
+  width: 20px;
+  height: 20px;
+  background: url('../images/twiter-map.png');
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 700px) {
+  .content-top__button {
+    left: 40px;
+  }
+  .top-image {
+    background: url('../images/map-tablet.png');
+    height: 768px;
+    background-size: cover;
+  }
+  .main-content {
+    display: flex;
+    height: 436px;
+    padding: 80px 40px;
+    gap: 70px;
+  }
+  .main-content__tiny-title {
+    margin: 0;
+  }
+  .footer {
+    display: flex;
+    height: 216px;
+    justify-content: space-between;
+  }
+  .footer__desc {
+    margin: 0 65px;
+    width: 281px;
+    height: 104px;
+  }
+  .footer__icon {
+    margin-right: 0;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .content-top__button {
+    left: 150px;
+  }
+  .main-content__title {
+    font-size: 70px;
+    line-height: 70px;
+  }
+  .main-content__tiny-title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .main-content__tiny-desc,
+  .main-content__desc {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .top-image {
+    background: url('../images/map-lap.png');
+    height: 600px;
+    background-size: cover;
+  }
+  .main-content {
+    height: 548px;
+    padding: 104px 165px;
+    gap: 340px;
+  }
+  .footer__desc {
+    margin: 0 65px;
+    width: 430px;
+    height: 87px;
+  }
+}
